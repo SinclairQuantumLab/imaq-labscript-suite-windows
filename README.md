@@ -30,7 +30,7 @@
 6. Run the below to create Labscript profile:
 
     ```powershell
-    > uv run labscript-profile-create # [OPTIONS]
+    > uv run labscript-profile-create -n imaq_lab -c
     ```
 
     See [this page](https://labscriptsuite.org/en/latest/installation/regular-pypi/) to find details on the `[OPTIONS]`.
