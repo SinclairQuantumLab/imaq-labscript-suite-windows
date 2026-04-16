@@ -15,7 +15,7 @@
 
     ```powershell
     cd $HOME
-    git clone https://github.com/SinclairQuantumLab/Labscript-windows.git
+    git clone https://github.com/SinclairQuantumLab/labscript-suite-windows.git
     ```
 
     `labscript-suite-windows` folder should have been created.
