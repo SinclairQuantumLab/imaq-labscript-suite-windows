@@ -4,17 +4,23 @@
 
 2. Install [`uv`](https://docs.astral.sh/uv/) following [this link](https://docs.astral.sh/uv/getting-started/installation/) and close the `powershell` for the installation.
 
-3. `git clone` this repo in `C:\`. `C:\Labscript-windows\` folder will be downloaded.
+3. Open `powershell` and `git clone` this repo in `C:\`. `C:\Labscript-windows\` folder will be downloaded.
 
-4. Open `powershell` and go to the repo folder. Run the below in the terminal:
+   ```powershell
+   > cd C:\
+   > git clone https://github.com/SinclairQuantumLab/Labscript-windows.git
+    ```
+
+5. Go to the repo folder and run `uv sync`:
 
     ```powershell
+    > cd C:\Labscript-windows
     > uv sync
     ```
     
-    The will install `labscript-suite` and required packages.
+    This will install `labscript-suite` and required packages.
 
-5. Run the below to create Labscript profile:
+6. Run the below to create Labscript profile:
 
     ```powershell
     > uv run labscript-profile-create # [OPTIONS]
@@ -22,7 +28,7 @@
 
     See [this page](https://labscriptsuite.org/en/latest/installation/regular-pypi/) to find details on the `[OPTIONS]`.
 
-6. Run the below to create the shortcuts in Desktop:
+7. Run the below to create the shortcuts in Desktop:
 
     ```powershell
     > uv run desktop-app install blacs lyse runmanager runviewer
