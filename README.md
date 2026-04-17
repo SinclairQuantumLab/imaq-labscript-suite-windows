@@ -48,20 +48,22 @@ This repo contains `uv` project to seamlessly install `labscript-suite` and cust
     uv run desktop-app install blacs lyse runmanager runviewer
     ```
 
-That's it!
+That's it! Try opneing `BLACS` app and it should give no error.
 
 ## Customizing for IMAQ Lab
 
 ### Creating PrawnBlaster & PrawnDO demo
 
-1. Rename the existing demo `connection_table.py` to `connection_table_demo.py` and copy the `connection_table.py` for the Prawn demo pi picos' and demo puse sequence:
-    ```powershell
-    mv .\userlib\labscriptlib\imaq_lab\connection_table.py .\userlib\labscriptlib\imaq_lab\connection_table_dummy.py
-    cp -r .\imaq-library\labscriptlib_prawn-demo\* userlib\labscriptlib\imaq_lab\
-    ```
+Rename the existing demo `connection_table.py` to `connection_table_demo.py` and copy the `connection_table.py` for the Prawn demo pi picos' and demo pulse sequence:
+ ```powershell
+ mv .\userlib\labscriptlib\imaq_lab\connection_table.py .\userlib\labscriptlib\imaq_lab\connection_table_dummy.py
+ cp -r .\imaq-library\labscriptlib_prawn-demo\* userlib\labscriptlib\imaq_lab\
+ ```
+
+The connection_table.py should be recompiled in `BLACS` ignore error when `BLACS` restarts and just open it again.
 
 ## One-shot setup script
-
+Copy & paste the below script to a Powershell terminal (innitial location doesn't matter) and all the steps above will be done.
 ```powershell
 cd $HOME
 ### 1. Install `labscript-suite` and create profile and Desktop shortcuts
@@ -75,4 +77,5 @@ uv run desktop-app install blacs lyse runmanager runviewer
 # PrawnBlaster & PrawnDO demo
 mv .\userlib\labscriptlib\imaq_lab\connection_table.py .\userlib\labscriptlib\imaq_lab\connection_table_dummy.py
 cp -r .\imaq-library\labscriptlib_prawn-demo\* userlib\labscriptlib\imaq_lab\
+ 
 ```
