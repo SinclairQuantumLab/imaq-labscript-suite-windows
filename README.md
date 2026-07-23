@@ -69,7 +69,7 @@ That's it! Try opneing `BLACS` app and it should give no error.
 3. Move into `.\userlib\labscriptlib\$APPARATUS_NAME\` and change the name of `connection_table.py.template` to `connection_table.py`.
 
 4. Open the `connection_table.py` and replace the placeholders like `<COM PORT>` and `<PICO BOARD NAME>`.
-    > **TBD**: ask Josie about details until she describe it here.
+    > **TODO**: ask Josie about details until she describe it here.
 
 ## One-shot setup script
 
