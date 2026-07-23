@@ -3,7 +3,7 @@ name = "imaq-labscript-suite-windows"
 version = "0.1.0"
 description = "labscript-suite installation and customization and for IMAQ Lab, Josiah Sinclair Group"
 readme = "README.md"
-requires-python = "==3.13.*"
+requires-python = "==3.14.*"
 dependencies = [
     "labscript-suite>=3.3.0",
     "pyqt5>=5.15.11",
