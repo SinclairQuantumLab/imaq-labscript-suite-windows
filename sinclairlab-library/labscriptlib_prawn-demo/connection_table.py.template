@@ -8,17 +8,17 @@ def ConnectionTable():
     #PrawnBlaster definition
     PrawnBlaster(
         name='prawnblaster',
-        com_port='COM10',
+        com_port='<COM PORT>',
         num_pseudoclocks=2,
-        pico_board='pico1'
+        pico_board='<PICO BOARD NAME>'
     )
 
     #PrawnDo Definition
     PrawnDO(
         name='prawn_do',
-        com_port='COM11',
+        com_port='<COM PORT>',
         clock_line=prawnblaster.clocklines[1],
-        pico_board='pico1'
+        pico_board='<PICO BOARD NAME>'
     )
 
     DigitalOut('do0', prawn_do.outputs, 'do0')
