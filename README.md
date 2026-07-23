@@ -34,10 +34,11 @@ This repo contains `uv` project to seamlessly install `labscript-suite` and cust
     This will install `labscript-suite` and required packages.
 
 
-6. Run the below to create Labscript profile names as `imaq_lab`:
+6. Run the below to create Labscript profile with `<APPARATUS_NAME>` (recommended to be the computer's name; e.g., imaq-lab-control, imaq-analysis):
 
     ```powershell
-    uv run labscript-profile-create -n imaq_lab -c
+    $APPARATUS_NAME = "<APPARATUS_NAME>"
+    uv run labscript-profile-create -n $APPARATUS_NAME -c
     ```
 
     See [this page](https://labscriptsuite.org/en/latest/installation/regular-pypi/) for the available options for the `labscript-profile-create` command.
@@ -54,20 +55,33 @@ That's it! Try opneing `BLACS` app and it should give no error.
 
 ### Creating PrawnBlaster & PrawnDO demo
 
-Rename the existing demo `connection_table.py` to `connection_table_demo.py` and copy the `connection_table.py` for the Prawn demo pi picos' and demo pulse sequence:
- ```powershell
- mv .\userlib\labscriptlib\imaq_lab\connection_table.py .\userlib\labscriptlib\imaq_lab\connection_table_dummy.py
- cp -r .\imaq-library\labscriptlib_prawn-demo\* userlib\labscriptlib\imaq_lab\
- ```
+1. In `userlib\labscriptlib\<APPARATUS_NAME>\`folder, rename the existing demo `connection_table.py` to `connection_table_demo.py` and copy the `sinclairlab-library\labscriptlib_prawn-demo\connection_table.py` for the Prawn demo pi picos' and demo pulse sequence:
 
-The connection_table.py should be recompiled in `BLACS` ignore error when `BLACS` restarts and just open it again.
+    ```powershell
+    mv .\userlib\labscriptlib\$APPARATUS_NAME\connection_table.py .\userlib\labscriptlib\$APPARATUS_NAME\connection_table_dummy.py
+    cp -r .\sinclairlab-library\labscriptlib_prawn-demo\* userlib\labscriptlib\$APPARATUS_NAME\
+    ```
+
+    > **NOTE**: the env variable `$APPARATUS_NAME` is the one set during the installation above.
+
+2. Open `BLACS`, recompile the `connection_table.py` and restart it, and open `BLACS` again after closing an error dialog that pops up.
+
+3. Move into `.\userlib\labscriptlib\$APPARATUS_NAME\` and change the name of `connection_table.py.template` to `connection_table.py`.
+
+4. Open the `connection_table.py` and replace the placeholders like `<COM PORT>` and `<PICO BOARD NAME>`.
+    > **TBD**: ask Josie about details until she describe it here.
 
 ## One-shot setup script
-Copy & paste the below script to a Powershell terminal (innitial location doesn't matter) and all the steps above will be done.
+
+Set the env variable for appartus name used in labscript (e.g., imaq-lab-control, imaq-analysis).
 
 ```powershell
-$APPARATUS_NAME = "imaq_lab"
+$APPARATUS_NAME = "<APPARATUS_NAME>"
+```
 
+Then, copy & paste the below script to a Powershell terminal (innitial location doesn't matter) and all the steps above will be done.
+
+```powershell
 cd $HOME
 ### 1. Install `labscript-suite` and create profile and Desktop shortcuts
 git clone https://github.com/SinclairQuantumLab/imaq-labscript-suite-windows.git labscript-suite
@@ -79,8 +93,8 @@ uv run desktop-app install blacs lyse runmanager runviewer
 ### 2. Apply IMAQ customization
 # PrawnBlaster & PrawnDO demo
 mv ".\userlib\labscriptlib\$APPARATUS_NAME\connection_table.py" ".\userlib\labscriptlib\$APPARATUS_NAME\connection_table_dummy.py"
-cp -r .\imaq-library\labscriptlib_prawn-demo\* "userlib\labscriptlib\$APPARATUS_NAME\"
- 
+cp -r .\sinclairlab-library\labscriptlib_prawn-demo\* "userlib\labscriptlib\$APPARATUS_NAME\"
+
 ```
 
-Make sure to open `BLACS`, recompile and restart it, and open `BLACS` again after closing an error dialog that pops up.
+**Make sure to rename and configre `.\userlib\labscriptlib\$APPARATUS_NAME\connection_table.py.template`, open `BLACS`, recompile and restart it, and open `BLACS` again after closing an error dialog that pops up.**
