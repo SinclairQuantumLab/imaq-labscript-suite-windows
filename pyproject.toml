@@ -13,3 +13,6 @@ dependencies = [
 required-environments = [
     "sys_platform == 'win32' and platform_machine == 'AMD64'",
 ]
+constraint-dependencies = [
+    "numpy<2.5",
+]
