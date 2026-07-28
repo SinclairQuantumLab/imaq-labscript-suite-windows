@@ -6,7 +6,7 @@ This repo contains `uv` project to seamlessly install `labscript-suite` and cust
 
 1. Make sure to back up and remove all the files bekow from the previous installation:
    - Labscript suite & profile folder: `%USERPROFILE%\Labscript-suite`
-   - `Experiments` folder
+   - `C:\Experiments` folder
    - Shortcut files in `%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs`:
       - `BLACS - the labscript suite.lnk`
       - `lyse - the labscript suite.lnk`
