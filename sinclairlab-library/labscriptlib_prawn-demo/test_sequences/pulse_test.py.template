@@ -17,7 +17,7 @@ from labscript import (
     stop,
     wait,
 )
-from labscriptlib.imaq_lab.connection_table import ConnectionTable
+from labscriptlib.<APPARATUS_NAME>.connection_table import ConnectionTable
 
 if __name__ == '__main__':
 
