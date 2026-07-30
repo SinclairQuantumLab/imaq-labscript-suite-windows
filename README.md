@@ -68,7 +68,9 @@ This repository contains a `uv` project for seamlessly installing `labscript-sui
     uv run desktop-app install blacs lyse runmanager runviewer
     ```
 
-That's it! Try opening `BLACS`; it should launch without errors.
+That's it! Try opening `BLACS`; it should launch like the screenshot below without errors.
+
+![BLACS running successfully with the dummy connection table](<README_BLACS with dummy.png>)
 
 ## Customizing for IMAQ Lab
 
