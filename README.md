@@ -149,6 +149,7 @@ There are two different ways to use labscript to operate devices: manual mode an
 1. Plug your BNC connector (wired to Digital Output 11 and Ground on PrawnD) into any oscilloscope or multimeter.
 2. Open BLACS and toggle 'do11' on and off under the 'prawn_do' tab. 
 3. As you toggle the 'do11' button, you should be able to observe a ~3.3V TTL signal go "high" and "low" on your oscilloscope or multimeter. If this works, you have successfully demonstrated use of manual mode!
+
 To test buffered mode, we will use an another labscript program called runmanager, which complies experimental sequences called "shots". These "shot" files are then passed to BLACS, which calls the workers of every device used in that sequence. To run a sequence, do the following:
 1. Plug your BNC connector (wired to Digital Output 11 and Ground on PrawnD) into an oscilloscope. You will be viewing a 30 ms sequence of 100 3.3V pulses (high for 100 us and low for 200 ms), so adjust scope settings for such a sequence to be visible. 
 2. Open runmanager and BLACS. Both programs buts be open to run shots.
