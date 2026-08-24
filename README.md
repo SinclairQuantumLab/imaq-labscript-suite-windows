@@ -88,7 +88,7 @@ That's it! Try opening `BLACS`; it should launch like the screenshot below witho
 
 2. Open the `userlib\labscriptlib\$APPARATUS_NAME\connection_table.py.template` file and replace placeholders such as `<COM PORT>` and `<PICO BOARD NAME>`.
 
-    > **TODO**: Ask Josie for details and document them here.
+    > To specify '<COM PORT>', open your Device Manager and look under Ports (COM & LPT) for a USB Serial Device. Plug in the PrawnBlaster and PrawnDO one at a time to determine which COM corresponds to each board. For example, if plugging in your PrawnBlaster causes a new USB Serial Device (COM9) to appear in Device Manager, replace '<COM PORT>' with 'COM9' in the PrawnBlaster connection table entry (notice <> are also removed). To specify '<PICO BOARD NAME>', look at the name printed on each Raspberry Pi Pico. If your PrawnBlaster Pico is labeled 'Pico 2 W' or similar, replace '<PICO BOARD NAME>' with pico2. If your Pico is labeled 'Raspberry Pi Pico' or similar, '<PICO BOARD NAME>' with pico1. Don't forget to specify these lines again in the PrawnDO connection table entry. 
 
 3. Remove the `.template` extension from `connection_table.py.template` manually or by running the command below:
 
