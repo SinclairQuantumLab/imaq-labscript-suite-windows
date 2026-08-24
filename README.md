@@ -144,6 +144,12 @@ Steps that have to be performed manually:
 1. Make sure to **configure `.\userlib\labscriptlib\$APPARATUS_NAME\connection_table.py.template` and remove the `.template` extension** from the file name.
 2. Then, open `BLACS`, recompile the connection table, and restart `BLACS`. After closing the error dialog that appears, open `BLACS` again.
 
+## Initial testing demo
+There are two different ways to use labscript to operate devices: manual mode and buffered mode. Manual mode refers to user interaction with the BLACS GUI (graphical user interface) to send individual commands to a device. To test manual mode using your PrawnBlaster/PrawnDO:
+1. Plug your BNC connector (wired to Digital Output 11 and Ground on PrawnD) into any oscilloscope or multimeter.
+2. Open BLACS and toggle 'do11' on and off.
+3. As you toggle the 'do11' button, you should be able to observe a ~3.3V TTL signal go "high" and "low" on your oscilloscope or multimeter. If this works, you have successfully demonstrated use of manual mode!
+
 
 ## Developer Notes
 
