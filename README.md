@@ -147,8 +147,15 @@ Steps that have to be performed manually:
 ## Initial testing demo
 There are two different ways to use labscript to operate devices: manual mode and buffered mode. Manual mode refers to user interaction with the BLACS GUI (graphical user interface) to send individual commands to a device. To test manual mode using your PrawnBlaster/PrawnDO:
 1. Plug your BNC connector (wired to Digital Output 11 and Ground on PrawnD) into any oscilloscope or multimeter.
-2. Open BLACS and toggle 'do11' on and off.
+2. Open BLACS and toggle 'do11' on and off under the 'prawn_do' tab. 
 3. As you toggle the 'do11' button, you should be able to observe a ~3.3V TTL signal go "high" and "low" on your oscilloscope or multimeter. If this works, you have successfully demonstrated use of manual mode!
+To test buffered mode, we will use an another labscript program called runmanager, which complies experimental sequences called "shots". These "shot" files are then passed to BLACS, which calls the workers of every device used in that sequence. To run a sequence, do the following:
+1. Plug your BNC connector (wired to Digital Output 11 and Ground on PrawnD) into an oscilloscope. You will be viewing a 30 ms sequence of 100 3.3V pulses (high for 100 us and low for 200 ms), so adjust scope settings for such a sequence to be visible. 
+2. Open runmanager and BLACS. Both programs buts be open to run shots.
+3. In runmanager, select pulse_test.py as your "labscript file". This file is located at labscript-suite/sinclairlab-library/labscriptlib_prawn-demo/test_sequences.
+4. To run the shot, click "Engage" in top left corner.
+5. If shot executes successfully, you should be able to view a series of square pulses that align with the pulse width and amplitude specified in your sequence.
+6. Try to create a more interesting sequence building off the basic pulse test, such as varying pulse width or spacing! 
 
 
 ## Developer Notes
