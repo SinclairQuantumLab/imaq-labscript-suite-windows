@@ -3,13 +3,26 @@ name = "imaq-labscript-suite-windows"
 version = "0.1.0"
 description = "labscript-suite installation and customization and for IMAQ Lab, Josiah Sinclair Group"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.13, <3.14"
 dependencies = [
     "labscript-suite>=3.3.0",
+    "niswitch>=1.5.0",
+    "picosdk==1.1",
     "pyqt5>=5.15.11",
+    "pyvisa>=1.16.2",
+    "spinnaker-python",
 ]
 
 [tool.uv]
 required-environments = [
     "sys_platform == 'win32' and platform_machine == 'AMD64'",
+]
+
+[tool.uv.sources]
+spinnaker-python = { path = "imaq-library/wheels/spinnaker_python-4.3.0.190-cp313-cp313-win_amd64/spinnaker_python-4.3.0.190-cp313-cp313-win_amd64.whl" }
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+    "notebook>=7.6.2",
 ]
