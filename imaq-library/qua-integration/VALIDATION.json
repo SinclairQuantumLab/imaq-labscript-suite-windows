@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-26T14:52:35.312366-05:00",
+  "source_hashes_verified": 139,
+  "python_files_parsed": 127,
+  "preexisting_syntax_errors_outside_opx": [
+    {
+      "path": "user_devices/NIRFCombiner/blacs_workers.py",
+      "line": 12,
+      "error": "expected an indented block after function definition on line 10",
+      "preexisting_source": true
+    }
+  ],
+  "opx_tests_run": 6,
+  "opx_failures": 0,
+  "opx_errors": 0,
+  "uv_lock_check": "passed",
+  "uv_pip_check": "all installed packages compatible",
+  "hardware_sequences_executed": false
+}

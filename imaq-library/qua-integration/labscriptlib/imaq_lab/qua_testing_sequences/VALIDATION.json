@@ -1,0 +1,169 @@
+{
+  "connection_table": "C:\\Users\\imaq\\labscript-suite\\userlib\\labscriptlib\\imaq_lab\\connection_table.py",
+  "connection_table_sha256": "a543b49d3cb86b86baf83f66aa9799af052b528cc5c6b20c7ebda9006fc5bea9",
+  "connection_table_unchanged": true,
+  "python": "3.13.13 (main, Apr 14 2026, 14:30:19) [MSC v.1944 64 bit (AMD64)]",
+  "versions": {
+    "labscript": "3.4.2",
+    "labscript-devices": "3.3.0",
+    "qm-qua": "1.4.1",
+    "numpy": "2.4.3"
+  },
+  "hardware_executed": false,
+  "observed_ni_requirements": {
+    "finite_timing_minimum_samples": 2,
+    "pxie_6535_initial_transfer_minimum_samples": 4,
+    "evidence": "Reported DAQmx errors -200077 and -200294; enforced by fake Task regression checks"
+  },
+  "validation_scope": "Local compilation, QUA serialization, NI buffers and real NI worker methods with fake tasks; no hardware or QOP server compilation",
+  "passed": 10,
+  "failed": 0,
+  "results": [
+    {
+      "lesson": "01_opx_digital_pulse",
+      "status": "PASS",
+      "clock_rows": {
+        "ni_pxie_6535_clock": 5,
+        "ni_pxie_6738_1_clock": 5
+      },
+      "ni_buffered_samples_per_channel": {
+        "analog": 4,
+        "digital": 4
+      }
+    },
+    {
+      "lesson": "02_opx_analog_pulse_train",
+      "status": "PASS",
+      "clock_rows": {
+        "ni_pxie_6535_clock": 5,
+        "ni_pxie_6738_1_clock": 5
+      },
+      "ni_buffered_samples_per_channel": {
+        "analog": 4,
+        "digital": 4
+      }
+    },
+    {
+      "lesson": "03_ni_single_voltage",
+      "status": "PASS",
+      "clock_rows": {
+        "ni_pxie_6535_clock": 5,
+        "ni_pxie_6738_1_clock": 7
+      },
+      "ni_buffered_samples_per_channel": {
+        "analog": 6,
+        "digital": 4
+      }
+    },
+    {
+      "lesson": "04_ni_voltage_staircase",
+      "status": "PASS",
+      "clock_rows": {
+        "ni_pxie_6535_clock": 5,
+        "ni_pxie_6738_1_clock": 11
+      },
+      "ni_buffered_samples_per_channel": {
+        "analog": 10,
+        "digital": 4
+      }
+    },
+    {
+      "lesson": "05_ni_digital_pattern",
+      "status": "PASS",
+      "clock_rows": {
+        "ni_pxie_6535_clock": 11,
+        "ni_pxie_6738_1_clock": 5
+      },
+      "ni_buffered_samples_per_channel": {
+        "analog": 4,
+        "digital": 10
+      }
+    },
+    {
+      "lesson": "06_ni_analog_ramp",
+      "status": "PASS",
+      "clock_rows": {
+        "ni_pxie_6535_clock": 5,
+        "ni_pxie_6738_1_clock": 507
+      },
+      "ni_buffered_samples_per_channel": {
+        "analog": 506,
+        "digital": 4
+      }
+    },
+    {
+      "lesson": "07_independent_ni_clocks",
+      "status": "PASS",
+      "clock_rows": {
+        "ni_pxie_6535_clock": 9,
+        "ni_pxie_6738_1_clock": 507
+      },
+      "ni_buffered_samples_per_channel": {
+        "analog": 506,
+        "digital": 8
+      }
+    },
+    {
+      "lesson": "08_qua_and_ni_together",
+      "status": "PASS",
+      "clock_rows": {
+        "ni_pxie_6535_clock": 7,
+        "ni_pxie_6738_1_clock": 507
+      },
+      "ni_buffered_samples_per_channel": {
+        "analog": 506,
+        "digital": 6
+      }
+    },
+    {
+      "lesson": "09_fixed_time_dilation",
+      "status": "PASS",
+      "clock_rows": {
+        "ni_pxie_6535_clock": 9,
+        "ni_pxie_6738_1_clock": 511
+      },
+      "ni_buffered_samples_per_channel": {
+        "analog": 510,
+        "digital": 8
+      }
+    },
+    {
+      "lesson": "10_qua_runtime_clock_speed",
+      "status": "PASS",
+      "clock_rows": {
+        "ni_pxie_6535_clock": 7,
+        "ni_pxie_6738_1_clock": 507
+      },
+      "ni_buffered_samples_per_channel": {
+        "analog": 506,
+        "digital": 6
+      }
+    }
+  ],
+  "source_sha256": {
+    "01_opx_digital_pulse.py": "7cb724fae22249f5805a77a12c37f757776247a5170c988083288e899f56e15e",
+    "02_opx_analog_pulse_train.py": "8f3f9af8198b9f03941ad30fac7317a22cadf4d7d95275a5c0527ff354b4d3e0",
+    "03_ni_single_voltage.py": "58852311bed68feb964f82d055c610dfdf5ca44d7bafa6d8d65dd077df354251",
+    "04_ni_voltage_staircase.py": "569a76108f584844b5439040d77519a576c0d9cfd8ed1b824a3303868776869f",
+    "05_ni_digital_pattern.py": "732e38d1a040ca6545dcea7fffe334e5264ad9f47a009b7b10ab15e49bb70b56",
+    "06_ni_analog_ramp.py": "66ca03e130357448b614694d79ca9357f312c9e2bff560f01abad186668e5ca0",
+    "07_independent_ni_clocks.py": "385383a970a3d69405101af629a818990b1cdce2a63905800f32b3140cbd1695",
+    "08_qua_and_ni_together.py": "11a6349f2ac3ee1b2bf5baf7739c145b0b083750d48b1110ef8f04a09e6d87af",
+    "09_fixed_time_dilation.py": "391140e6aba6340f5489f3890f8f0f0dba70eeffd19ae8509e9529b8f389e5cc",
+    "10_qua_runtime_clock_speed.py": "46a04fa57c956be6c8d28e22e17fc8e2e80c7abdf27b5918f632abb5ec314790",
+    "__init__.py": "886f7fd6e152434fb5d49b4d4fc2c23eaba4a2f4390f432b1021dfeffc2e4a4b",
+    "opx_configuration.py": "579f9f9abddc1dcab2d00bc826d512ec73c0d45dacc194fe5b64016328cdf385",
+    "sequence_support.py": "ade478249e9fcc3f5db4d53eae02710667a2f4639afbe4e48b7c1fe4682aedea",
+    "validate_sequences.py": "efedf4511582c489e606bddca30bae6db5b022c155fe9e0e13c736b91f38cce0"
+  },
+  "runtime_branches": {
+    "slow_seed_1": "PASS",
+    "fast_seed_0": "PASS"
+  },
+  "ni_minimum_buffer_regression": {
+    "original_lesson_01": "Reproduced failure: 1 finite sample per channel",
+    "two_sample_lesson_01": "Reproduced failure: digital StartTask needs 4 initially written samples",
+    "corrected_lesson_01": "PASS software checks: 4 finite samples per channel on both cards",
+    "method": "Installed NI worker methods with fake Task; no hardware calls"
+  }
+}

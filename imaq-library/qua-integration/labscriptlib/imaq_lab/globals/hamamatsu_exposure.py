@@ -1,0 +1,1 @@
+hamamatsu_exposure = [1e-3, 2e-3, 5e-3, 10e-3, 20e-3]

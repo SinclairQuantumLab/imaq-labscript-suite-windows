@@ -2,6 +2,46 @@
 
 This repo contains `uv` project to seamlessly install `labscript-suite` and customization and for the use in IMAQ Lab, Josiah Sinclair Group.
 
+## ControlPC snapshot with QUA integration
+
+The `controlpc-withqua` branch captures the ControlPC environment and experiment
+source on October 26, 2026. It starts from the `controlpc-beforequa` backup.
+
+- `pyproject.toml` and `uv.lock` include the `opx` dependency group. Install that
+  group with `uv sync --locked --group opx` after providing the local Spinnaker
+  wheel referenced in `pyproject.toml`.
+- `environment-snapshots/controlpc-withqua-freeze.txt` records the installed
+  packages, including `qm-qua==1.4.1` and `pydantic==2.14.1`.
+- `imaq-library/qua-integration/` contains a source snapshot of
+  `user_devices/` and `labscriptlib/imaq_lab/`, including the OPX driver,
+  connection tables, QUA lessons, MOT shots, supporting device drivers, and
+  offline regression tests. `MANIFEST.json` records source repository commits,
+  local changes, and SHA-256 hashes of the archived files.
+
+The live `userlib/` repositories remain separate and ignored by this repository.
+To restore the archived code into a Labscript profile, copy the two source trees
+from `imaq-library/qua-integration/` into the corresponding directories under that
+profile's `userlib/`, after backing up its existing files. Machine configuration,
+Runmanager globals, shot data, vendor drivers, and the Spinnaker wheel are supplied
+separately. Restart the applications and recompile the connection table and shots
+after installing the code.
+
+The OPX driver snapshot includes the fix that keeps scaled variable waits below
+the observed 24-bit boundary on QOP 3.8.1. The reproduction and recorded results
+are under `user_devices/opx/diagnostics/` in the archive. The separate automatic
+section-padding issue for `qua_logic` remains unresolved in this snapshot;
+`mot_loading_measurement_qua.py` uses fixed timing for the original MOT loading
+protocol. Archived test sequences and legacy shots retain their current behavior.
+`VALIDATION.json` records the checks and an existing syntax error in the unused
+`NIRFCombiner/blacs_workers.py` stub, which is preserved as part of the backup.
+
+Run the archived OPX regression tests without executing a hardware sequence:
+
+```powershell
+$env:PYTHONPATH = (Resolve-Path .\imaq-library\qua-integration).Path
+& .\.venv\Scripts\python.exe -m unittest discover -s .\imaq-library\qua-integration\user_devices\opx\tests -v
+```
+
 ## Quick Labscript installation in Windows with `uv`
 
 1. Make sure to back up and remove all the files bekow from the previous installation:

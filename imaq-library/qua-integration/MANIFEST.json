@@ -1,0 +1,751 @@
+{
+  "captured_at": "2026-10-26T14:51:20.414631-05:00",
+  "timezone": "America/Chicago",
+  "suite_base_commit": "b947a3b2727e21b61dc7b127c68abc9e72484c92",
+  "sources": [
+    {
+      "path": ".",
+      "remote": "https://github.com/SinclairQuantumLab/imaq-userlib.git",
+      "base_commit": "ff76769db19110d3b3b3a19305f28039a7eec344",
+      "working_tree_status": [
+        "M labscriptlib/imaq_lab/connection_table.py",
+        " D labscriptlib/imaq_lab/imaq_lab_sequences/Imaging_MOT.py",
+        " D labscriptlib/imaq_lab/imaq_lab_sequences/MOT_loading_measurement.py",
+        " D labscriptlib/imaq_lab/imaq_lab_sequences/MOT_release_time_series.py",
+        " M labscriptlib/imaq_lab/imaq_lab_sequences/deprecated_lab_sequences/MOT_loading_measurement.py",
+        "?? labscriptlib/imaq_lab/connection_table_beforeOPX.py",
+        "?? labscriptlib/imaq_lab/imaq_lab_sequences/deprecated_lab_sequences/Imaging_MOT.py",
+        "?? labscriptlib/imaq_lab/imaq_lab_sequences/deprecated_lab_sequences/MOT_release_time_series.py",
+        "?? labscriptlib/imaq_lab/imaq_lab_sequences/mot_imaging_qua.py",
+        "?? labscriptlib/imaq_lab/imaq_lab_sequences/mot_loading_measurement_qua.py",
+        "?? labscriptlib/imaq_lab/qua_testing_sequences/",
+        "?? labscriptlib/imaq_lab/test_sequences/OPX_example_sequence/digital_pulse.py"
+      ]
+    },
+    {
+      "path": "user_devices",
+      "remote": "https://github.com/SinclairQuantumLab/user-devices.git",
+      "base_commit": "03d1441a7aa0a4b6e70d14b600539b182c99c65e",
+      "working_tree_status": [
+        "?? fake_voltage_generator/",
+        "?? opx/"
+      ]
+    }
+  ],
+  "installed_versions": {
+    "qm-qua": "1.4.1",
+    "pydantic": "2.14.1",
+    "labscript": "3.4.2",
+    "labscript-devices": "3.3.0",
+    "labscript-utils": "3.4.3",
+    "blacs": "3.2.3",
+    "runmanager": "3.3.0"
+  },
+  "excluded": [
+    "Git metadata",
+    "Python and notebook caches",
+    "HDF5 shot/global files",
+    "temporary .bak files",
+    "analysislib",
+    "logs and saved app configuration",
+    "vendor wheel binaries"
+  ],
+  "file_count": 139,
+  "files": [
+    {
+      "path": "labscriptlib/imaq_lab/__init__.py",
+      "bytes": 151,
+      "sha256": "3afb073cec4ef38207ff4d9c1904b43588b47d6668893b2b193f2dd4a8d393b3"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/connection_table.py",
+      "bytes": 17727,
+      "sha256": "204b19bc37ef6b850a83066956c4b6929650b09c6d9a8eaf8a9e8e23dcac8d46"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/connection_table_beforeOPX.py",
+      "bytes": 16934,
+      "sha256": "c426a886c51676a33b55ddfb244fad57f257ffe67381089470dafd859e28acad"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/connection_table_dummy.py",
+      "bytes": 1019,
+      "sha256": "16c9ae169676b948bfcfefb8f3ce01ee817383a7d76e133e451b7fb87ccf6b4d"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/connection_table_IMAQdx_remote.py",
+      "bytes": 1515,
+      "sha256": "ea9492ccbcb2fc00f21940810351b845171eb358b5bb6fe1f2fd279a18248909"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/connection_table_origin.py",
+      "bytes": 16270,
+      "sha256": "0a26b885183b8b05c9cca05101c74f86692d3e1cb6c9ace5e30a95d99799b7b1"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/example_experiment.py",
+      "bytes": 1667,
+      "sha256": "f7799465b585f3bf31e85fef620f7e230b149b6caecb0154221f4091e82ec1b8"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/example_IMAQdx_remote.py",
+      "bytes": 1871,
+      "sha256": "2189aa485290f82f14a1cf4077ebe6246460bcf81cec15319f3855e243a36685"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/globals/hamamatsu_exposure.py",
+      "bytes": 53,
+      "sha256": "16022a9906b4b7c2c98322883cc0afa14b5a7697819107aadebb595db7fa5223"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/imaq_lab_sequences/deprecated_lab_sequences/Imaging_MOT.py",
+      "bytes": 2848,
+      "sha256": "d23aef9b4c9d59fb3d38a5519808125eb743e20192345963a3e8f050b432abf9"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/imaq_lab_sequences/deprecated_lab_sequences/MOT_image_capture.py",
+      "bytes": 2738,
+      "sha256": "31f6c61f80b935fd405c51829526465d0d621455a74839054ab03428fc0bb0c5"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/imaq_lab_sequences/deprecated_lab_sequences/MOT_light_pulse_timing.py",
+      "bytes": 5287,
+      "sha256": "f8b845388f6f1565fef597282575ba4f097296f4dc0366a1548920518ec1426a"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/imaq_lab_sequences/deprecated_lab_sequences/MOT_loading_measurement.py",
+      "bytes": 5126,
+      "sha256": "9ef0939c8cf9ddb8b15ee972c59d28a3bcdcc69bb6ef65011c91f4ae3a87346d"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/imaq_lab_sequences/deprecated_lab_sequences/MOT_loading_time_series.py",
+      "bytes": 2937,
+      "sha256": "00a6cbe4e6cd58b32ab6d75e45a23bd1df7aca21ae1b2ee7582a08947be53946"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/imaq_lab_sequences/deprecated_lab_sequences/MOT_long_term_monitor.py",
+      "bytes": 2638,
+      "sha256": "d920b13d10415632bd8553657f859918b6adff287ed9a2af1f8caaf8958719c4"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/imaq_lab_sequences/deprecated_lab_sequences/MOT_release_time_series.py",
+      "bytes": 6456,
+      "sha256": "4b3f9d719afea81da4f89b6b31ae70047877f93bcb216057d6cc2db5bb43689b"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/imaq_lab_sequences/deprecated_lab_sequences/SpinnakerCamera_shutdown_fix.patch",
+      "bytes": 354,
+      "sha256": "f2ab9ac357b3029b30779f717cea801ed92d1925200b14f5da464e71ac7ec1b8"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/imaq_lab_sequences/mot_imaging_qua.py",
+      "bytes": 8862,
+      "sha256": "e84b692cc3f5e6e544383d4d24769ef6435e7812fb18f6c857dc4a9564dd113c"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/imaq_lab_sequences/mot_loading_measurement_qua.py",
+      "bytes": 8484,
+      "sha256": "f81facbbc9e79630ce5e13917dd47535a0edee7524d694cfd5f751706c3e6fcc"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/qua_testing_sequences/01_opx_digital_pulse.py",
+      "bytes": 863,
+      "sha256": "757fd34c249e392ddae6a8fe68824efd52caa266224350ea0a454cb5687fc588"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/qua_testing_sequences/02_opx_analog_pulse_train.py",
+      "bytes": 906,
+      "sha256": "8f3f9af8198b9f03941ad30fac7317a22cadf4d7d95275a5c0527ff354b4d3e0"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/qua_testing_sequences/03_ni_single_voltage.py",
+      "bytes": 758,
+      "sha256": "f38038e1dc4fb24bb27db57fae9325f86168dfa93699ac13a283a7886ad757f9"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/qua_testing_sequences/04_ni_voltage_staircase.py",
+      "bytes": 796,
+      "sha256": "66df635d3d7a19ec88d63a20b2028ab15cf240b7799d466860acb1da43976ebf"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/qua_testing_sequences/05_ni_digital_pattern.py",
+      "bytes": 771,
+      "sha256": "6410679c027d9c5e731c6763b35a971042b81d6fbc1b7b908639e5710341479a"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/qua_testing_sequences/06_ni_analog_ramp.py",
+      "bytes": 736,
+      "sha256": "8ff1134006e2758accfcba44989ec4339224435720227c6983af567d1a11c994"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/qua_testing_sequences/07_independent_ni_clocks.py",
+      "bytes": 901,
+      "sha256": "f53b2fda7aca9787312886cb516bb2f78d530ddabbff8655ff258c870fd2ecbf"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/qua_testing_sequences/08_qua_and_ni_together.py",
+      "bytes": 1520,
+      "sha256": "bbb51f5666f8f8614e685f0c1009f3e6466cf46edee5df6b99841eeb47f78f42"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/qua_testing_sequences/09_fixed_time_dilation.py",
+      "bytes": 1096,
+      "sha256": "f5f1399b9b331dec1016ff7b73d9485947e17579fcb725d2a1bcef18840aebce"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/qua_testing_sequences/10_qua_runtime_clock_speed.py",
+      "bytes": 2027,
+      "sha256": "affa324d46efbc3761867506f28d21b4d33ea62701922dfe59c020c6b64e44e8"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/qua_testing_sequences/12_measurement_feedback.py",
+      "bytes": 3865,
+      "sha256": "eeceee6ede034bb66981a43491871f5a03335f0ec88888272cbc50d532c1528b"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/qua_testing_sequences/13_ni_branching_with_measurement_feedback.py",
+      "bytes": 8527,
+      "sha256": "642e0efca6fcf33809788675550585f85e1d1d9f9b73ae6b2e42df1a6b11f296"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/qua_testing_sequences/__init__.py",
+      "bytes": 78,
+      "sha256": "886f7fd6e152434fb5d49b4d4fc2c23eaba4a2f4390f432b1021dfeffc2e4a4b"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/qua_testing_sequences/opx_configuration.py",
+      "bytes": 4772,
+      "sha256": "4cf9b275904c2abbc49d15f29cd6171d017b1b5b25065ad2305729651ee3a3ff"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/qua_testing_sequences/README.md",
+      "bytes": 10793,
+      "sha256": "b596be5e4de584f1a9b3e24e8bfa9a2a1c2344c54c4a6798ca97fdd0641e38c3"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/qua_testing_sequences/sequence_support.py",
+      "bytes": 5822,
+      "sha256": "53a5f785826131004611b8b4d557caf4ec099f4e0afad24959f9c4618956c302"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/qua_testing_sequences/validate_sequences.py",
+      "bytes": 13715,
+      "sha256": "efedf4511582c489e606bddca30bae6db5b022c155fe9e0e13c736b91f38cce0"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/qua_testing_sequences/VALIDATION.json",
+      "bytes": 5700,
+      "sha256": "223c5cf05ae22f0588c3c27a35648118ff93932cc9e0cca1e44c3b1107d9b04b"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/sequence_utils.py",
+      "bytes": 13560,
+      "sha256": "ee2d1ff05014eb136768a96e1049b73c17187bf4e3f2e397928768efa722b9ea"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/standard_subsequences.py",
+      "bytes": 37972,
+      "sha256": "8246e345090b26e032c32ab5e716f83870a8e37e299caf25ad30afd27ad212e9"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/test_sequences/ni_testing.py",
+      "bytes": 531,
+      "sha256": "20095024618fb2c537b535c669d4e5692c024f5875fc81ac1db1b4b7dc3f5b81"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/test_sequences/OPX_example_sequence/branch.py",
+      "bytes": 792,
+      "sha256": "5941e20ebdadb09dd28f16217f3afebbef66df19452474cdf61642cd33d6c253"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/test_sequences/OPX_example_sequence/conditional_stop.py",
+      "bytes": 595,
+      "sha256": "dab170cb2d26c9a640f6bcb227cfbc774254c0dbf8e3ff4f901b5c0bd47838d0"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/test_sequences/OPX_example_sequence/digital_pulse.py",
+      "bytes": 694,
+      "sha256": "6bd8a8e6859e620e6ce1a525ec9ffafe48d3e0f283a8ab821c4b245e008e4b32"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/test_sequences/OPX_example_sequence/OPX_branching_example.py",
+      "bytes": 1641,
+      "sha256": "a2313e55388765a745db3d3b0183f462e483c162019265748ebda85ef02f3d20"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/test_sequences/pulse_test.py",
+      "bytes": 748,
+      "sha256": "5671d582c31d8c37ddf2217684bb385a06a440509f229701eb28aca91cc97dc5"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/test_sequences/test_6361.py",
+      "bytes": 1644,
+      "sha256": "297dddd0480d26eff02091eb4b738c306541c482de3fd5b7d3e88ae3096e203e"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/test_sequences/test_6535.py",
+      "bytes": 291,
+      "sha256": "2c91a4992072596240ceaab5f9278d65b0199547bda7f50150f8181fb193811c"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/test_sequences/test_6738.py",
+      "bytes": 1064,
+      "sha256": "d11fcebef183f2ac670eb340e9ad4a208f854f4b00e9816614adb49862675a6b"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/test_sequences/test_aom_speed.py",
+      "bytes": 1384,
+      "sha256": "84327cc4897aad4ae3fbb32fd09c4d0df8e346b23170e41fec7d61ba518dc21d"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/test_sequences/test_GH3910.py",
+      "bytes": 1599,
+      "sha256": "0f213f6687a4579f3d213e70fa7a2c70aa558a54da72cb8bcc813d74719d75cc"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/test_sequences/test_GH3910_combined.py",
+      "bytes": 1736,
+      "sha256": "7884677953b2dd876fef74059d8ee9e75030dfc7b22fc705ad2a603bfa63552e"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/test_sequences/test_HamamatsuOrca.py",
+      "bytes": 787,
+      "sha256": "d00edacc6ed07f8248832c54a694b2160cbe0734683b5b0d04168380e889861d"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/test_sequences/test_NICounter.py",
+      "bytes": 1277,
+      "sha256": "ef85ef1b8bbd20ede4dec130988713b32b66d6f175d376f7c3f564f87f69c196"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/test_sequences/test_NICounter_ctr1.py",
+      "bytes": 1299,
+      "sha256": "9ca8c323c5fff46a502b47f7f98a4be5b4db54502b045bd21c59640d6480e15c"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/test_sequences/test_PicoScope2405A.py",
+      "bytes": 1238,
+      "sha256": "da1abc8659a5b880b85d244979c522d2ff6d3ff1f255d7f2bcddcdb2c928d28d"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/test_sequences/test_shutter_speed.py",
+      "bytes": 959,
+      "sha256": "9198648c29d3e5847cfe4561467e66179f671967f324d12b75f492a7c8ce47a7"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/test_sequences/test_shuttered_beams_closed.py",
+      "bytes": 2928,
+      "sha256": "7d1535bc1dd9f2107ca3a7394e60c5a55bf840e563ac921a31e5add3d5a8f489"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/test_sequences/test_shuttered_beams_open.py",
+      "bytes": 2465,
+      "sha256": "042d00456f0e390033a68b02b3a93ac427a2e6132241c635bf6650b8b2dd4aa7"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/test_sequences/test_SpinnakerFLIR.py",
+      "bytes": 835,
+      "sha256": "cb05521de44452d3170fe7824fb4eccb956bdf45c6e2d147d395c414bd7a397c"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/test_sequences/test_SpinnakerFLIR_both_cameras.py",
+      "bytes": 3072,
+      "sha256": "70228a87b15aa7407264e2fd1380716173faaba45f25e750f2abf545b62f4afa"
+    },
+    {
+      "path": "labscriptlib/imaq_lab/test_sequences/test_SpinnakerFLIR_timing_both_cameras.py",
+      "bytes": 3072,
+      "sha256": "70228a87b15aa7407264e2fd1380716173faaba45f25e750f2abf545b62f4afa"
+    },
+    {
+      "path": "user_devices/branch.py",
+      "bytes": 792,
+      "sha256": "5941e20ebdadb09dd28f16217f3afebbef66df19452474cdf61642cd33d6c253"
+    },
+    {
+      "path": "user_devices/branching_ramps_etc.py",
+      "bytes": 1642,
+      "sha256": "f937eff7ae271e6b17848ef138d3b95fee5d0fb7568f42d03ffc15d1cb6b0a0d"
+    },
+    {
+      "path": "user_devices/conditional_stop.py",
+      "bytes": 595,
+      "sha256": "dab170cb2d26c9a640f6bcb227cfbc774254c0dbf8e3ff4f901b5c0bd47838d0"
+    },
+    {
+      "path": "user_devices/CustomSpinnakerCamera/__init__.py",
+      "bytes": 52,
+      "sha256": "434841ccc049baab2848b006a129ca6907805544a65b4347d386a15912a8f1f9"
+    },
+    {
+      "path": "user_devices/CustomSpinnakerCamera/blacs_tabs.py",
+      "bytes": 1929,
+      "sha256": "f4adcfe61ca360c8323eb4240aa1a001668dbca200a0b257b1baa37f2842ea8a"
+    },
+    {
+      "path": "user_devices/CustomSpinnakerCamera/blacs_workers.py",
+      "bytes": 1015,
+      "sha256": "8a5ab78e0584eb0804eec9bed508f7841545ac1d7472e103d78c4b9f3cc1dd0d"
+    },
+    {
+      "path": "user_devices/CustomSpinnakerCamera/labscript_devices.py",
+      "bytes": 175,
+      "sha256": "ac2935fc948b6f949c5ef92a4dd7667de8eb6a2db54849a6f1bb37f9cfbdfac5"
+    },
+    {
+      "path": "user_devices/CustomSpinnakerCamera/register_classes.py",
+      "bytes": 249,
+      "sha256": "963dfaae5935ba3b149cb4b5c69d160412a718e8665b00968577c64b5ea1b42b"
+    },
+    {
+      "path": "user_devices/Deprecated/README.txt",
+      "bytes": 747,
+      "sha256": "68ea7907ade98e7957c57720d09cfc224c812461ac0ec05980ebb23763f2c7a9"
+    },
+    {
+      "path": "user_devices/Deprecated/RemoteSpinnakerCamera/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "user_devices/Deprecated/RemoteSpinnakerCamera/blacs_tabs.py",
+      "bytes": 5539,
+      "sha256": "65fcb00418865d9d492190fd9500507a7ca978593f4b300d220e1ee07c0d1219"
+    },
+    {
+      "path": "user_devices/Deprecated/RemoteSpinnakerCamera/blacs_workers.py",
+      "bytes": 1358,
+      "sha256": "15f6296ac0db8207ef1c34a28a62ccb94577b68eb0e62db64b22845591fd6d1a"
+    },
+    {
+      "path": "user_devices/Deprecated/RemoteSpinnakerCamera/blacs_workers_zprocess.py",
+      "bytes": 2194,
+      "sha256": "503951d352051a08ef78fcf1b52675515e444b654ab710668d1f7b3727ad22b5"
+    },
+    {
+      "path": "user_devices/Deprecated/RemoteSpinnakerCamera/labscript_devices.py",
+      "bytes": 1254,
+      "sha256": "3443d3740ac4d3a9372e11a7d59fd1809d24457210fd59a741c33c9f70165828"
+    },
+    {
+      "path": "user_devices/Deprecated/RemoteSpinnakerCamera/register_classes.py",
+      "bytes": 219,
+      "sha256": "df30a7f2c2713b8acde9d849481a6df598388f77f4885efc3d228201816c7b37"
+    },
+    {
+      "path": "user_devices/fake_voltage_generator/labscript_devices.py",
+      "bytes": 1739,
+      "sha256": "26b65f5dda126c472c3d992ea15c5c9434d8340d744e9c2aa0a6c834d621be58"
+    },
+    {
+      "path": "user_devices/fake_voltage_generator/README.md",
+      "bytes": 1664,
+      "sha256": "f04c511734bc869a1cdd9c20fd5bd12721ea0fe29c649b8474cfc0ef28a182eb"
+    },
+    {
+      "path": "user_devices/fake_voltage_generator/register_classes.py",
+      "bytes": 254,
+      "sha256": "e9d5609a44e0b8f845a6f80729ba3b16bea54c6e58921108fb3180e2b8f355d8"
+    },
+    {
+      "path": "user_devices/GH3910/__init__.py",
+      "bytes": 39,
+      "sha256": "cf028f999065552179b342bea6f2c5f5b21839364518bb4bfeddc5ce71444ad4"
+    },
+    {
+      "path": "user_devices/GH3910/blacs_tabs.py",
+      "bytes": 4005,
+      "sha256": "441c7c7d2708ad22072aa09cdbcb0d67245d0400b510fce180cb5ae9d4091e76"
+    },
+    {
+      "path": "user_devices/GH3910/blacs_workers.py",
+      "bytes": 3738,
+      "sha256": "860b14e6c67596c54f331417fdc7790fee4359f7a06c2b7438926373ef76e8e5"
+    },
+    {
+      "path": "user_devices/GH3910/gh3910.py",
+      "bytes": 21569,
+      "sha256": "903af103a7748e83b5fc90544989c47b5f8d111ab8b15ff832e52ad09a572db4"
+    },
+    {
+      "path": "user_devices/GH3910/labscript_devices.py",
+      "bytes": 2182,
+      "sha256": "b5ee46b7a9aece26c385b9e2511f37c691e10ba015ea753162e4b3e72aebd3ef"
+    },
+    {
+      "path": "user_devices/GH3910/register_classes.py",
+      "bytes": 172,
+      "sha256": "67c7ab215ca0d91ef5f558ec392d0b0f1a1fd1a4ee40d38991de8e78fde5f433"
+    },
+    {
+      "path": "user_devices/HamamatsuCamera/attributes.py",
+      "bytes": 2874,
+      "sha256": "227040f9429b2b2edec10288cf3a878a4cdcb6a8d37138d1cbef0785a937bc34"
+    },
+    {
+      "path": "user_devices/HamamatsuCamera/blacs_tabs.py",
+      "bytes": 1058,
+      "sha256": "171f5a3eff9b00bee25eb4574964b4cfd675ee9f3de56bd62ce3c19b4eaddac6"
+    },
+    {
+      "path": "user_devices/HamamatsuCamera/blacs_workers.py",
+      "bytes": 26028,
+      "sha256": "6426b17adbf9fd268dc240b4a3420d47b5bd0cc8497569b90380ce3881ed2907"
+    },
+    {
+      "path": "user_devices/HamamatsuCamera/dcam.py",
+      "bytes": 21875,
+      "sha256": "ed3b2c5d1af642494c5ba8db305d35719a716b018fd1bdae696076613c1ecc6c"
+    },
+    {
+      "path": "user_devices/HamamatsuCamera/dcam_show_single_captured_image.py",
+      "bytes": 3414,
+      "sha256": "1864badfa785f9f281c869fce2462204ae5d1ea3fd949005926813645736cee3"
+    },
+    {
+      "path": "user_devices/HamamatsuCamera/dcamapi4.py",
+      "bytes": 53831,
+      "sha256": "a0d4031709422cd58c06cc28d2e9882cc1a60c29ce39c6fea8ae95ee6abb6383"
+    },
+    {
+      "path": "user_devices/HamamatsuCamera/labscript_devices.py",
+      "bytes": 1275,
+      "sha256": "a8ad29ac040a8786d55e0bb727fd3b9787689c79b5535f84f045487f3444b7e4"
+    },
+    {
+      "path": "user_devices/HamamatsuCamera/README.md",
+      "bytes": 38,
+      "sha256": "9d7436ccb6fc22984bb99b8722f19866d9f3bcdf8fe72bcea42629efa76d3685"
+    },
+    {
+      "path": "user_devices/HamamatsuCamera/register_classes.py",
+      "bytes": 1053,
+      "sha256": "f083bf8136777e894073f859e522143fb68114ee98853086d6619c34685f1ce1"
+    },
+    {
+      "path": "user_devices/NICounter/blacs_tabs.py",
+      "bytes": 3643,
+      "sha256": "b4b86d6c798bb63d5a93b1624bb48584967baeb0b5f2e4c78cbcd54c5aaf9b4a"
+    },
+    {
+      "path": "user_devices/NICounter/blacs_workers.py",
+      "bytes": 9547,
+      "sha256": "cf5007370866c5522e7a2acb6cf4db8604de21c407dc1afafc7c15001e580439"
+    },
+    {
+      "path": "user_devices/NICounter/labscript_devices.py",
+      "bytes": 5175,
+      "sha256": "99c5cbe3cda306f3f07233e1476eacf4e41e52d174a01b84e692e03be6f07513"
+    },
+    {
+      "path": "user_devices/NICounter/README.md",
+      "bytes": 616,
+      "sha256": "c4fa91d642624d40771407066f0d35e45265c7ee4729e906c89b908855c39e92"
+    },
+    {
+      "path": "user_devices/NICounter/register_classes.py",
+      "bytes": 876,
+      "sha256": "adb2e0dba1cbb77f0279183d0a16228ed4650afe24eddf515d0e48d557a84b61"
+    },
+    {
+      "path": "user_devices/NIRFCombiner/blacs_tabs.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "user_devices/NIRFCombiner/blacs_workers.py",
+      "bytes": 141,
+      "sha256": "529fb98c2f66040049916641359354eeb6aebf27b1e221ecdfc272dff656f91c"
+    },
+    {
+      "path": "user_devices/NIRFCombiner/labscript_devices.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "user_devices/NIRFCombiner/register_classes.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "user_devices/opx/blacs_tabs.py",
+      "bytes": 11306,
+      "sha256": "49866636f05b24975a92b7918abeae593d553ce89df43df93c3da691612e06df"
+    },
+    {
+      "path": "user_devices/opx/blacs_workers.py",
+      "bytes": 32487,
+      "sha256": "4781f5af458f81d8a042d9c78df427b17560d2bc88f3b729165daea046b563f0"
+    },
+    {
+      "path": "user_devices/opx/config_serialization.py",
+      "bytes": 2438,
+      "sha256": "b6745d45a75e3bdb1e82f4c80547b15e630ef65475848ca55fb80c3eb5d8d00e"
+    },
+    {
+      "path": "user_devices/opx/diagnostics/runtime_wait_arithmetic_probe.py",
+      "bytes": 5632,
+      "sha256": "44ba4027a10300659edd0f85f8db975df645ba6205cf291d2ee987f297277952"
+    },
+    {
+      "path": "user_devices/opx/diagnostics/runtime_wait_probe_results.json",
+      "bytes": 12888,
+      "sha256": "d727de08a911af3f3590d4e03e6d486fd083419b5c9fbdd1988738887a9eee02"
+    },
+    {
+      "path": "user_devices/opx/diagnostics/runtime_wait_timing_probe.py",
+      "bytes": 6697,
+      "sha256": "eecbc7b6c8c7ced548c250616487c695db5754d9769256a41b1af2a2bcd83dae"
+    },
+    {
+      "path": "user_devices/opx/execution_mode.py",
+      "bytes": 1263,
+      "sha256": "0b83691b42db6a8355ea84bc7aa32ce487cbe5890eb550048a2ab6c10f71f17f"
+    },
+    {
+      "path": "user_devices/opx/labscript_devices.py",
+      "bytes": 60150,
+      "sha256": "1a7e3228a9e6616c7ac7d0980f5970be1db1921b351705d2c420c5c41b592778"
+    },
+    {
+      "path": "user_devices/opx/opx_export_lock.py",
+      "bytes": 2094,
+      "sha256": "701ab07850ec9256b85372244439c17e253e66dd84430cb695796a8c68356e05"
+    },
+    {
+      "path": "user_devices/opx/opx_headless_runner.py",
+      "bytes": 13061,
+      "sha256": "ac9a168777d3fb141490ba73ffb22c5d36228d7aa2d037cd28930f1b7519046e"
+    },
+    {
+      "path": "user_devices/opx/opx_job_runner.py",
+      "bytes": 6513,
+      "sha256": "cda446eb37159daf692a1a297e38fa65208bd48f51f8eb5d70970bf911e4ad35"
+    },
+    {
+      "path": "user_devices/opx/opx_job_status.py",
+      "bytes": 1960,
+      "sha256": "dbeda9a1257485321e7175248d34830535ebce4beb748660a7217184114573ac"
+    },
+    {
+      "path": "user_devices/opx/opx_result_exporter.py",
+      "bytes": 3926,
+      "sha256": "44d4c3259a9dde70bc0c0b9b744ca868ffd2fa329a4db9945f2ee77431681a30"
+    },
+    {
+      "path": "user_devices/opx/opx_shot_loader.py",
+      "bytes": 10231,
+      "sha256": "45d50857f9ed7b15aba7124c34d23b322b5b7e256dfa2027a3ef3c8df415c6f3"
+    },
+    {
+      "path": "user_devices/opx/precompiled_job.py",
+      "bytes": 4176,
+      "sha256": "6c185cf361024d4c0ede183a2c493243425d2d9451b0127b279d4f029bd559e1"
+    },
+    {
+      "path": "user_devices/opx/qua_manual_programs.py",
+      "bytes": 10812,
+      "sha256": "54863ef4a11a83f713a068bc9ea5e53d71dd5f08ddc864125d6c28011301d1d9"
+    },
+    {
+      "path": "user_devices/opx/qua_program_print.py",
+      "bytes": 855,
+      "sha256": "b5cb9a53a399bc01a0407d889e5dcaa8839667ab71b4a2e862129bb010547428"
+    },
+    {
+      "path": "user_devices/opx/qua_tick_programs.py",
+      "bytes": 14295,
+      "sha256": "65e90351d632c3c03d5e25089148368aa9512e874d1f2a39adf37ffb487ffe3f"
+    },
+    {
+      "path": "user_devices/opx/qua_triggered_segments.py",
+      "bytes": 1670,
+      "sha256": "9e4d44b276bf6c59d9cc7e8b47c504e127cc349d212f271edd6106028bf83ad1"
+    },
+    {
+      "path": "user_devices/opx/README.md",
+      "bytes": 12059,
+      "sha256": "c8a0c6995d320bc09ae0f561b6a037c0c847662be0c69b7fd77ae5181cba7518"
+    },
+    {
+      "path": "user_devices/opx/README_DEVELOPERS.md",
+      "bytes": 16930,
+      "sha256": "c2bf2f042b5c998c8337b65c4f5245771dd22fa43edaffc63d1324fd0528134e"
+    },
+    {
+      "path": "user_devices/opx/register_classes.py",
+      "bytes": 285,
+      "sha256": "4365b3f21d4b621f191e30597a889788aa88d5debd5b90410cc9deefa59aaceb"
+    },
+    {
+      "path": "user_devices/opx/result_io.py",
+      "bytes": 32163,
+      "sha256": "6cf77d1c6244c82fbfcab600d84a4637456b09eea762aa8ebfbda9606425df8a"
+    },
+    {
+      "path": "user_devices/opx/runviewer_parsers.py",
+      "bytes": 9378,
+      "sha256": "8a76f30e602b7d05c6f686e134052ee081ea631a18b71973e8d1b8732a4365f0"
+    },
+    {
+      "path": "user_devices/opx/shot_stream_metadata.py",
+      "bytes": 6939,
+      "sha256": "aefae3a8d91c0ffceb168b1b321e1e28bcfc9b2ff034077eaeb2a7acba836222"
+    },
+    {
+      "path": "user_devices/opx/tests/test_qua_rebuild.py",
+      "bytes": 2594,
+      "sha256": "16753b3ae818527cc4929580527e6d41b23468a52db1f12168c1cea6fba0fb5b"
+    },
+    {
+      "path": "user_devices/opx/tests/test_runtime_wait_bounds.py",
+      "bytes": 2445,
+      "sha256": "147632e3abbb2e6e0709eb2b58adf786b718cc82860db76c19249f2232afe581"
+    },
+    {
+      "path": "user_devices/opx/tick_playback_types.py",
+      "bytes": 7516,
+      "sha256": "9fc57028806a71b5d4099e7ad37239aa22635870e08193ccecc72211011c3425"
+    },
+    {
+      "path": "user_devices/opx/tick_segment_compile.py",
+      "bytes": 19098,
+      "sha256": "3cd46e6a9837bdf296b33df4f087323a1708d2f8852af94e4a3005a4a37f0f37"
+    },
+    {
+      "path": "user_devices/PicoScope2405A/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "user_devices/PicoScope2405A/blacs_tabs.py",
+      "bytes": 5058,
+      "sha256": "254374ccdd684c02cac2284e4d940576cf8155629e7491100de264a073452172"
+    },
+    {
+      "path": "user_devices/PicoScope2405A/blacs_workers.py",
+      "bytes": 37100,
+      "sha256": "78bbf911268a72c49cef55439752d5b95aa11ad068c5a631ab7ae179956bf30f"
+    },
+    {
+      "path": "user_devices/PicoScope2405A/labscript_devices.py",
+      "bytes": 6903,
+      "sha256": "09125bfad23bfb20ff060d86f15873ceea67ee433e4fa278a37c495c720a865e"
+    },
+    {
+      "path": "user_devices/PicoScope2405A/register_classes.py",
+      "bytes": 198,
+      "sha256": "4e88eec1b0a798ca6993be773ac6a3ac22232ba555a3accc154cd1694b2bd93b"
+    },
+    {
+      "path": "user_devices/README.md",
+      "bytes": 93,
+      "sha256": "18b1ba126540791cde621be596d0291251180b66a562a97710ffb337bf67182e"
+    },
+    {
+      "path": "user_devices/README.txt",
+      "bytes": 689,
+      "sha256": "51829f16d2b6cef4852d633301a2f21e01b6675300fa8f863b7ed6ea2bd9df75"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+These are user_devices folders for devices/approaches not currently in use by the IMAQ Experiment.
+
+RemoteSpinnakerCamera (Moved to Deprecated on 7/17/2026): folder containing BLACS worker for Spinnaker Camera, which communicates remotely over a ZMQ socket using zprocess from its own virtual environment "spinnaker-camera-venv" (Python 3.10). This approach was used because PySpin, the python wrapper for the Spinnaker Camera, was only supported through python version 3.10. Now, PySpin is supported up to Python 3.14 and the default Spinnaker Camera worker supported in BLACs can be used, so no custom user_devices folder is needed. 
+	-The remote server and files/sequences can be found at C:\Users\imaq\Remote_Devices\spinnaker-camera-server

@@ -1,0 +1,475 @@
+{
+  "arithmetic_hardware": {
+    "qm_qua": "1.4.1",
+    "server": "DevicesVersion(gateway='3.8.1-18234.48acf79', controllers={'con1': None}, qm_qua='1.4.1', octaves={}, QOP='3.8.1')",
+    "expected": [
+      250000,
+      8486053,
+      16777215,
+      16777216,
+      16777217,
+      31250000,
+      33554431
+    ],
+    "mode": "execute-arithmetic",
+    "qm_id": "QM-7c25f5fe-1836-47d3-8f15-c0aace169595",
+    "program_id": "01e26695-6956-4670-ad76-e5b6556de276",
+    "job_id": "1e0e4690-1ab4-4aaf-86cc-f0cbc8788cb7",
+    "results": {
+      "raw": [
+        250000,
+        8486053,
+        16777215,
+        16777216,
+        16777217,
+        31250000,
+        33554431
+      ],
+      "literal_products": [
+        250000,
+        8486053,
+        16777215,
+        16777216,
+        16777217,
+        31250000,
+        33554431
+      ],
+      "variable_products": [
+        250000,
+        8486053,
+        16777215,
+        16777216,
+        16777217,
+        31250000,
+        33554431
+      ],
+      "scales": [
+        1.0
+      ]
+    },
+    "products_match": true
+  },
+  "boundary_waits_before_fix": {
+    "qm_qua": "1.4.1",
+    "server": "DevicesVersion(gateway='3.8.1-18234.48acf79', controllers={'con1': None}, qm_qua='1.4.1', octaves={}, QOP='3.8.1')",
+    "qm_id": "QM-7c25f5fe-1836-47d3-8f15-c0aace169595",
+    "pulse_cycles": 25000,
+    "bases": [
+      16777215,
+      16777316,
+      33554431,
+      31250000
+    ],
+    "program_id": "240c591c-9192-409d-a7b5-314c08e04f21",
+    "job_id": "695b2ad6-66c4-48bd-be3e-a9cc62852e24",
+    "wall_seconds": 1.0343849000055343,
+    "results": [
+      {
+        "mode": "literal",
+        "requested_cycles": 16777215,
+        "product": 16777215,
+        "measured_wait_cycles": 16777215,
+        "error_cycles": 0
+      },
+      {
+        "mode": "literal",
+        "requested_cycles": 16777316,
+        "product": 16777316,
+        "measured_wait_cycles": 16777316,
+        "error_cycles": 0
+      },
+      {
+        "mode": "literal",
+        "requested_cycles": 33554431,
+        "product": 33554431,
+        "measured_wait_cycles": 33554431,
+        "error_cycles": 0
+      },
+      {
+        "mode": "literal",
+        "requested_cycles": 31250000,
+        "product": 31250000,
+        "measured_wait_cycles": 31250000,
+        "error_cycles": 0
+      },
+      {
+        "mode": "assigned",
+        "requested_cycles": 16777215,
+        "product": 16777215,
+        "measured_wait_cycles": 16777224,
+        "error_cycles": 9
+      },
+      {
+        "mode": "assigned",
+        "requested_cycles": 16777316,
+        "product": 16777316,
+        "measured_wait_cycles": 109,
+        "error_cycles": -16777207
+      },
+      {
+        "mode": "assigned",
+        "requested_cycles": 33554431,
+        "product": 33554431,
+        "measured_wait_cycles": 16777224,
+        "error_cycles": -16777207
+      },
+      {
+        "mode": "assigned",
+        "requested_cycles": 31250000,
+        "product": 31250000,
+        "measured_wait_cycles": 14472793,
+        "error_cycles": -16777207
+      },
+      {
+        "mode": "calculated",
+        "requested_cycles": 16777215,
+        "product": 16777215,
+        "measured_wait_cycles": 16777221,
+        "error_cycles": 6
+      },
+      {
+        "mode": "calculated",
+        "requested_cycles": 16777316,
+        "product": 16777316,
+        "measured_wait_cycles": 106,
+        "error_cycles": -16777210
+      },
+      {
+        "mode": "calculated",
+        "requested_cycles": 33554431,
+        "product": 33554431,
+        "measured_wait_cycles": 16777221,
+        "error_cycles": -16777210
+      },
+      {
+        "mode": "calculated",
+        "requested_cycles": 31250000,
+        "product": 31250000,
+        "measured_wait_cycles": 14472790,
+        "error_cycles": -16777210
+      },
+      {
+        "mode": "helper",
+        "requested_cycles": 16777215,
+        "product": 16777215,
+        "measured_wait_cycles": 16777221,
+        "error_cycles": 6
+      },
+      {
+        "mode": "helper",
+        "requested_cycles": 16777316,
+        "product": 16777316,
+        "measured_wait_cycles": 106,
+        "error_cycles": -16777210
+      },
+      {
+        "mode": "helper",
+        "requested_cycles": 33554431,
+        "product": 33554431,
+        "measured_wait_cycles": 16777221,
+        "error_cycles": -16777210
+      },
+      {
+        "mode": "helper",
+        "requested_cycles": 31250000,
+        "product": 31250000,
+        "measured_wait_cycles": 14472790,
+        "error_cycles": -16777210
+      }
+    ],
+    "pulse_times": [
+      27,
+      16802242,
+      16827242,
+      33629558,
+      33654558,
+      67233989,
+      67258989,
+      98533989,
+      98558989,
+      115361213,
+      115386213,
+      115411322,
+      115436322,
+      132238546,
+      132263546,
+      146761339,
+      146786339,
+      163588560,
+      163613560,
+      163638666,
+      163663666,
+      180465887,
+      180490887,
+      194988677,
+      195013677,
+      211815898,
+      211840898,
+      211866004,
+      211891004,
+      228693225,
+      228718225,
+      243216015
+    ],
+    "execution_report": "Execution report for job 695b2ad6-66c4-48bd-be3e-a9cc62852e24\nNo errors"
+  },
+  "boundary_waits_after_fix": {
+    "qm_qua": "1.4.1",
+    "server": "DevicesVersion(gateway='3.8.1-18234.48acf79', controllers={'con1': None}, qm_qua='1.4.1', octaves={}, QOP='3.8.1')",
+    "qm_id": "QM-7c25f5fe-1836-47d3-8f15-c0aace169595",
+    "pulse_cycles": 25000,
+    "bases": [
+      16777215,
+      16777316,
+      33554431,
+      31250000
+    ],
+    "program_id": "d1b5af17-5224-43a1-9977-8ed0f06cc243",
+    "job_id": "f7136150-af89-4f5f-b26c-04a683975206",
+    "wall_seconds": 1.2350200999935623,
+    "results": [
+      {
+        "mode": "literal",
+        "requested_cycles": 16777215,
+        "product": 16777215,
+        "measured_wait_cycles": 16777215,
+        "error_cycles": 0
+      },
+      {
+        "mode": "literal",
+        "requested_cycles": 16777316,
+        "product": 16777316,
+        "measured_wait_cycles": 16777316,
+        "error_cycles": 0
+      },
+      {
+        "mode": "literal",
+        "requested_cycles": 33554431,
+        "product": 33554431,
+        "measured_wait_cycles": 33554431,
+        "error_cycles": 0
+      },
+      {
+        "mode": "literal",
+        "requested_cycles": 31250000,
+        "product": 31250000,
+        "measured_wait_cycles": 31250000,
+        "error_cycles": 0
+      },
+      {
+        "mode": "assigned",
+        "requested_cycles": 16777215,
+        "product": 16777215,
+        "measured_wait_cycles": 16777224,
+        "error_cycles": 9
+      },
+      {
+        "mode": "assigned",
+        "requested_cycles": 16777316,
+        "product": 16777316,
+        "measured_wait_cycles": 109,
+        "error_cycles": -16777207
+      },
+      {
+        "mode": "assigned",
+        "requested_cycles": 33554431,
+        "product": 33554431,
+        "measured_wait_cycles": 16777224,
+        "error_cycles": -16777207
+      },
+      {
+        "mode": "assigned",
+        "requested_cycles": 31250000,
+        "product": 31250000,
+        "measured_wait_cycles": 14472793,
+        "error_cycles": -16777207
+      },
+      {
+        "mode": "calculated",
+        "requested_cycles": 16777215,
+        "product": 16777215,
+        "measured_wait_cycles": 16777221,
+        "error_cycles": 6
+      },
+      {
+        "mode": "calculated",
+        "requested_cycles": 16777316,
+        "product": 16777316,
+        "measured_wait_cycles": 106,
+        "error_cycles": -16777210
+      },
+      {
+        "mode": "calculated",
+        "requested_cycles": 33554431,
+        "product": 33554431,
+        "measured_wait_cycles": 16777221,
+        "error_cycles": -16777210
+      },
+      {
+        "mode": "calculated",
+        "requested_cycles": 31250000,
+        "product": 31250000,
+        "measured_wait_cycles": 14472790,
+        "error_cycles": -16777210
+      },
+      {
+        "mode": "helper",
+        "requested_cycles": 16777215,
+        "product": 16777215,
+        "measured_wait_cycles": 16777500,
+        "error_cycles": 285
+      },
+      {
+        "mode": "helper",
+        "requested_cycles": 16777316,
+        "product": 16777316,
+        "measured_wait_cycles": 16777601,
+        "error_cycles": 285
+      },
+      {
+        "mode": "helper",
+        "requested_cycles": 33554431,
+        "product": 33554431,
+        "measured_wait_cycles": 33554980,
+        "error_cycles": 549
+      },
+      {
+        "mode": "helper",
+        "requested_cycles": 31250000,
+        "product": 31250000,
+        "measured_wait_cycles": 31250483,
+        "error_cycles": 483
+      }
+    ],
+    "pulse_times": [
+      27,
+      16802242,
+      16827242,
+      33629558,
+      33654558,
+      67233989,
+      67258989,
+      98533989,
+      98558989,
+      115361213,
+      115386213,
+      115411322,
+      115436322,
+      132238546,
+      132263546,
+      146761339,
+      146786339,
+      163588560,
+      163613560,
+      163638666,
+      163663666,
+      180465887,
+      180490887,
+      194988677,
+      195013677,
+      211816177,
+      211841177,
+      228643778,
+      228668778,
+      262248758,
+      262273758,
+      293549241
+    ],
+    "execution_report": "Execution report for job f7136150-af89-4f5f-b26c-04a683975206\nNo errors"
+  },
+  "loading_waits_after_fix": {
+    "qm_qua": "1.4.1",
+    "server": "DevicesVersion(gateway='3.8.1-18234.48acf79', controllers={'con1': None}, qm_qua='1.4.1', octaves={}, QOP='3.8.1')",
+    "qm_id": "QM-7c25f5fe-1836-47d3-8f15-c0aace169595",
+    "pulse_cycles": 25000,
+    "bases": [
+      16777215,
+      16777316,
+      33554431,
+      31250000
+    ],
+    "program_id": "4fe31d03-6337-4f18-bffd-6a5ee3f1d36c",
+    "job_id": "82af7417-f46c-47c3-a4eb-5e894efbd767",
+    "wall_seconds": 8.269495399988955,
+    "results": [
+      {
+        "mode": "helper",
+        "requested_cycles": 50000000,
+        "scale": 0.5,
+        "expected_scaled_cycles": 25000000,
+        "product": 25000000,
+        "measured_wait_cycles": 25000768,
+        "error_cycles": 768
+      },
+      {
+        "mode": "helper",
+        "requested_cycles": 50000000,
+        "scale": 1.0,
+        "expected_scaled_cycles": 50000000,
+        "product": 50000000,
+        "measured_wait_cycles": 50000780,
+        "error_cycles": 780
+      },
+      {
+        "mode": "helper",
+        "requested_cycles": 50000000,
+        "scale": 2.0,
+        "expected_scaled_cycles": 100000000,
+        "product": 100000000,
+        "measured_wait_cycles": 100000780,
+        "error_cycles": 780
+      },
+      {
+        "mode": "helper",
+        "requested_cycles": 50000000,
+        "scale": 7.5,
+        "expected_scaled_cycles": 375000000,
+        "product": 375000000,
+        "measured_wait_cycles": 375000768,
+        "error_cycles": 768
+      },
+      {
+        "mode": "helper",
+        "requested_cycles": 250000000,
+        "scale": 1.0,
+        "expected_scaled_cycles": 250000000,
+        "product": 250000000,
+        "measured_wait_cycles": 250003948,
+        "error_cycles": 3948
+      },
+      {
+        "mode": "helper",
+        "requested_cycles": 1250000000,
+        "scale": 1.0,
+        "expected_scaled_cycles": 1250000000,
+        "product": 1250000000,
+        "measured_wait_cycles": 1250019689,
+        "error_cycles": 19689
+      }
+    ],
+    "pulse_times": [
+      31,
+      25025799,
+      25050800,
+      75076580,
+      75101581,
+      175127361,
+      175152362,
+      550178130,
+      550203131,
+      800232079,
+      800257080,
+      2050301769
+    ],
+    "execution_report": "Execution report for job 82af7417-f46c-47c3-a4eb-5e894efbd767\nNo errors"
+  },
+  "full_shot_compile_after_fix": {
+    "source": "C:\\Users\\imaq\\labscript-suite\\userlib\\labscriptlib\\imaq_lab\\imaq_lab_sequences\\mot_imaging_qua.py",
+    "shot": "C:\\Users\\imaq\\AppData\\Local\\Temp\\opx_wait_investigation_20261023\\mot_imaging_5s_after_wait_fix.h5",
+    "requested_loading_time": 5.0,
+    "compiled_program_id": "ccea36d4-2311-4a44-ab2b-ecaac3715982",
+    "executed": false
+  },
+  "finding": "On QOP 3.8.1 with qm-qua 1.4.1, large integer products are correct, while variable waits exhibit modulo-2**24 timing. Literal waits do not show this wrap. The fix bounds every scaled variable wait below 2**24 cycles.",
+  "test_output": "Only zero-amplitude pulses on scope_analog; no NI clock pulses or MOT sequence execution."
+}

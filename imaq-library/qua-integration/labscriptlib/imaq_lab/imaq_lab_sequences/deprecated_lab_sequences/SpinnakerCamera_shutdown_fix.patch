@@ -1,0 +1,10 @@
+--- SpinnakerCamera/blacs_workers.py
++++ SpinnakerCamera/blacs_workers.py
+@@ -248,5 +248,6 @@
+     def close(self):
+         print('Closing down the camera...')
+         self.camera.DeInit()
+-        self.camList.Clear()
++        # The local camera list was already cleared in __init__.
++        self.camera = None
+         self.system.ReleaseInstance()
